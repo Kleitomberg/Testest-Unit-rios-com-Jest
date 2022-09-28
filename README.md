@@ -1,22 +1,26 @@
-<h1 align="center"> Testes Unitários com Jest </h1>
+<h1 align="center"> 🧪 Testes Unitários com Jest 🧪 </h1>
 
 <p align="center">
-  <a href="#-tecnologia">Tecnologia</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instalação-e-configuração">Instalação e configuração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologia</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-instalação-e-configuração">Instalação e Configuração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-criando-os-testes">Criando os Testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-casos-para-testes">Casos para Testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-rodando-os-testes">Rodando os Testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-resultados">Resultados</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-video">Video</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  
 </p>
 
  
-## ✨ Tecnologia
+## ✨ Tecnologias
 
 Para Execução dos testes foi utilizado o Framework:
 
+- [Javascript](https://www.javascript.com/)
 - [Jest](https://jestjs.io/pt-BR/docs/getting-started)
 
 
-## ⚙️ Instalação e Configuração
+## ⚙ Instalação e Configuração
 
 1 - Instalando o JEST
 ```bash
@@ -90,8 +94,8 @@ test('Isósceles', () => {
 ```
 
 
-## Casos para Testes
-Segue algumas opções de entradas para serem testadas
+## 💡 Casos para Testes
+Segue algumas opções de entradas para serem testadas(opcional)
 
 ### Isósceless = dois lados iguais
 
