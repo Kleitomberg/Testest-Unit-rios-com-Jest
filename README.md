@@ -8,10 +8,10 @@
   <a href="#-rodando-os-testes">Rodando os Testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-resultados">Resultados</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-video">Video</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  
+
 </p>
 
- 
+
 ## ✨ Tecnologias
 
 Para Execução dos testes foi utilizado o Framework:
@@ -45,7 +45,7 @@ Após instalar e configurar o projeto, podemos agora criar nossos casos de teste
 1 - Exporte as funções que deseja utilizar nos testes
 
 ```bash
-  
+
 function triangulo(ladoA, ladoB, ladoC) {
 
         let resp =''
@@ -79,17 +79,24 @@ const triangulo = require('../codigo/Triangulos.js');
 3 - Criando os testes
 
 ```bash
-test.only('equilateros', () => {
-  expect(triangulo(10,10,10)).toBe("Equilátero");
+
+describe.only('module 1', () => {
+
+    test.only('primeiro', () => {
+    expect(triangulo(1, 2,3)).toBe("Escaleno");
+    });
+
+
+    test('segundo', () => {
+        expect(triangulo(10, 10,10)).toBe("Equilátero");
+    });
+
+
+    test('terceior', () => {
+        expect(triangulo(3, 2,3)).toBe("Isósceles");
+    });
+
 });
-
-test('escaleno', () => {
-    expect(triangulo(7,8,10)).toBe("Escaleno");
-  });
-
-test('Isósceles', () => {
-    expect(triangulo(19,19,16)).toBe("Isósceles");
-  })
 
 ```
 
@@ -136,9 +143,9 @@ Segue algumas opções de entradas para serem testadas(opcional)
     a = 7
     b = 7
     c = 7
-    
+
 # ▷ Rodando os Testes
-Para executar nossos casos de testes podemos usar 
+Para executar nossos casos de testes podemos usar
 
 ```bash
 yarn test
@@ -148,23 +155,24 @@ ou
 ```bash
 npm run test
 ```
-  
+
 # 📈 Resultados
 Apos rodar um dos comandos acima, o resultado será algo parecido com isso
  ```bash
-  
- PASS  tests/triangulo.test.js
-  √ equilateros (2 ms)
-  ○ skipped escaleno
-  ○ skipped Isósceles
+
+  PASS  tests/triangulo.test.js
+  module 1
+    √ primeiro (2 ms)
+    ○ skipped segundo
+    ○ skipped terceior
 
 Test Suites: 1 passed, 1 total
 Tests:       2 skipped, 1 passed, 3 total
 Snapshots:   0 total
-Time:        0.664 s, estimated 1 s
+Time:        0.902 s, estimated 1 s
 Ran all test suites.
-Done in 1.78s.
-  
+Done in 2.63s.
+
 ```
 
 ## 🎬 Video

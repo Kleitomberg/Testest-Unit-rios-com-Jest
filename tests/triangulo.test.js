@@ -1,14 +1,19 @@
 const triangulo = require('../codigo/Triangulos.js');
 
-test.only('equilateros', () => {
-  expect(triangulo(10,10,10)).toBe("Equilátero");
+describe.only('module 1', () => {
+
+    test.only('primeiro', () => {
+    expect(triangulo(1, 2,3)).toBe("Escaleno");
+    });
+
+
+    test('segundo', () => {
+        expect(triangulo(10, 10,10)).toBe("Equilátero");
+    });
+
+
+    test('terceior', () => {
+        expect(triangulo(3, 2,3)).toBe("Isósceles");
+    });
+
 });
-
-test('escaleno', () => {
-    expect(triangulo(7,8,10)).toBe("Escaleno");
-  });
-
-test('Isósceles', () => {
-    expect(triangulo(19,19,16)).toBe("Isósceles");
-  });
-
