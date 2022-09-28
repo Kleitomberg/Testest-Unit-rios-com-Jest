@@ -8,8 +8,7 @@
   <a href="#-rodando-os-testes">Rodando os Testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-
-
+ 
 ## ✨ Tecnologia
 
 Para Execução dos testes foi utilizado o Framework:
@@ -42,24 +41,51 @@ Após instalar e configurar o projeto, podemos agora criar nossos casos de teste
 1 - Exporte as funções que deseja utilizar nos testes
 
 ```bash
+  
+function triangulo(ladoA, ladoB, ladoC) {
 
- function suafuncao() {
-  return;
-}
-module.exports = suafuncao;
+        let resp =''
+
+        if(ladoA==ladoB && ladoB==ladoC){
+
+            resp="Equilátero";
+
+        }else if(ladoA!=ladoB && ladoB!=ladoC && ladoA!=ladoC){
+
+            resp="Escaleno"
+
+        }else
+        {
+            resp="Isósceles";
+
+        }
+
+        return resp
+
+    }
+
+    module.exports = triangulo;
 ```
 2 - Importando as funções
 
 ```bash
-const suafuncao = require('../diretorio/arquivo.extensao');
+const triangulo = require('../codigo/Triangulos.js');
 
 ```
 3 - Criando os testes
 
 ```bash
-test('titulo do teste', () => {
-    expect(suafuncao()).toBe(resultadoesperado);
+test.only('equilateros', () => {
+  expect(triangulo(10,10,10)).toBe("Equilátero");
+});
+
+test('escaleno', () => {
+    expect(triangulo(7,8,10)).toBe("Escaleno");
   });
+
+test('Isósceles', () => {
+    expect(triangulo(19,19,16)).toBe("Isósceles");
+  })
 
 ```
 
@@ -118,7 +144,28 @@ ou
 ```bash
 npm run test
 ```
+  
+# 📈 Resultados
+Apos rodar um dos comandos acima, o resultado será algo parecido com isso
+ ```bash
+  
+ PASS  tests/triangulo.test.js
+  √ equilateros (2 ms)
+  ○ skipped escaleno
+  ○ skipped Isósceles
 
+Test Suites: 1 passed, 1 total
+Tests:       2 skipped, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.664 s, estimated 1 s
+Ran all test suites.
+Done in 1.78s.
+  
+```
+
+## 🎬 Video
+Demonstração em video
+- [Clique aqui para assistir](https://jestjs.io/pt-BR/docs/getting-started)
 
 
 
