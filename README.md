@@ -177,7 +177,7 @@ Done in 2.63s.
 
 ## 🎬 Video
 Demonstração em video
-- [Clique aqui para assistir](https://jestjs.io/pt-BR/docs/getting-started)
+- [Clique aqui para assistir](https://youtu.be/v9htsdkRFAk)
 
 
 
