@@ -3,7 +3,7 @@ const triangulo = require('../codigo/Triangulos.js');
 describe.only('module 1', () => {
 
     test.only('primeiro', () => {
-    expect(triangulo(1, 2,3)).toBe("Escalenox");
+    expect(triangulo(1, 2,3)).toBe("Escaleno");
     });
 
 
