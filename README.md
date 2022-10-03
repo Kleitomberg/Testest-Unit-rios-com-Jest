@@ -100,6 +100,39 @@ describe.only('module 1', () => {
 
 ```
 
+3 - Setup e teardown em JEST
+
+Executa uma função antes que cada um dos testes neste arquivo seja executado. 
+```bash
+beforeEach(() => {
+  // Clears the database and adds some testing data.
+});
+```
+
+Executa uma função antes de qualquer um dos testes neste arquivo ser executado. 
+```bash
+beforeAll(() => {
+  // Limpa o banco de dados e adiciona alguns dados de teste.
+
+});
+```
+
+Executa uma função depois que todos os testes neste arquivo forem concluídos:
+
+```bash
+afterAll(() => {
+  //comandos
+});
+```
+
+Executa uma função após cada um dos testes deste arquivo completar.
+```bash
+afterEach(() => {
+  //comandos
+});
+```
+
+
 
 ## 💡 Casos para Testes
 Segue algumas opções de entradas para serem testadas(opcional)
