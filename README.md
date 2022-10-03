@@ -146,6 +146,20 @@ test('verificação que dar erro', () => {
 });
 ```
 
+5 - Matchers
+
+Além do ToBe() que utilizamos nos exemplos e o toThrow que pode ser usado para exeções, podemos esta utilizando outros metodos(Matchers) para comparar as nossas expectativas.
+
+- ToBe = Testa a igualdade exata
+- toEqual = Testa o valor de um objeto
+- toBeNull = Testa se retornou NULO
+- toBeUndefined = Testa se retornou Undefined
+- toContain = Verificar se um array ou iterável contém um item específico
+
+Entre outros que podemos acessar diretamente na propria documentação do framework
+
+
+
 ## 💡 Casos para Testes
 Segue algumas opções de entradas para serem testadas(opcional)
 
