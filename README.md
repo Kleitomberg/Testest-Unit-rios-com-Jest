@@ -215,6 +215,8 @@ Demonstração em video
 
 ## Configurando Actions
 
+Podemos também automatizar a execução de nossos testes sempre que uma mudança é feita no codigo principal:
+
 ```bash
 
 name: jestTest
