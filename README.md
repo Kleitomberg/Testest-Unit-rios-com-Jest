@@ -212,5 +212,6 @@ Done in 2.63s.
 Demonstração em video
 - [Clique aqui para assistir](https://youtu.be/v9htsdkRFAk)
 
+Status build
 
-
+[![jestTest](https://github.com/Kleitomberg/Testest-Unit-rios-com-Jest/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/Kleitomberg/Testest-Unit-rios-com-Jest/actions/workflows/node.js.yml)
