@@ -8,7 +8,7 @@ describe.only('module 1', () => {
 
 
     test('segundo', () => {
-        expect(triangulo(10, 10,10)).toBe("Equilátero");
+        expect(triangulo(10, 10,10)).toBe("Equiláterox");
     });
 
 
