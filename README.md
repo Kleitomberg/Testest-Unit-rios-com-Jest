@@ -213,7 +213,7 @@ Demonstração em video
 - [Clique aqui para assistir](https://youtu.be/v9htsdkRFAk)
 
 
-## Configurando Actions
+## 🤖 Configurando Actions
 
 Podemos também automatizar a execução de nossos testes sempre que uma mudança é feita no codigo principal:
 
