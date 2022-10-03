@@ -100,7 +100,7 @@ describe.only('module 1', () => {
 
 ```
 
-3 - Setup e teardown em JEST
+4 - Setup e teardown em JEST
 
 Executa uma função antes que cada um dos testes neste arquivo seja executado. 
 ```bash
