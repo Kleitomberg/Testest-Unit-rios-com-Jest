@@ -133,8 +133,18 @@ afterEach(() => {
   //comandos
 });
 ```
+4 - Exceções
 
+As exeções em Jest são feitas usando toThrow
 
+```bash
+test('verificação que dar erro', () => {
+
+  // Você pode usar uma mensagem exata de erro
+  expect(() => suaFunc()).toThrow('você está usando o JDK errado');
+ 
+});
+```
 
 ## 💡 Casos para Testes
 Segue algumas opções de entradas para serem testadas(opcional)
