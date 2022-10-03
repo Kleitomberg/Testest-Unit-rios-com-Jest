@@ -212,6 +212,40 @@ Done in 2.63s.
 Demonstração em video
 - [Clique aqui para assistir](https://youtu.be/v9htsdkRFAk)
 
+
+## Configurando Actions
+
+```bash
+
+name: jestTest
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install --save-dev jest
+    - run: npm test
+```
+
 Status build
 
 [![jestTest](https://github.com/Kleitomberg/Testest-Unit-rios-com-Jest/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/Kleitomberg/Testest-Unit-rios-com-Jest/actions/workflows/node.js.yml)
